@@ -1,0 +1,88 @@
+.navbar {
+  background-color: #fff !important;
+}
+.navbar-brand,
+.nav-link {
+  color: #000 !important;
+  font-weight: 600;
+}
+
+/* Header */
+header {
+  background-color: #009578;
+  color: #fff;
+  padding: 100px 0;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header .text-content {
+  max-width: 600px;
+}
+header img {
+  max-width: 350px;
+  height: auto;
+}
+
+/* Botones */
+.btn-black {
+  background-color: #000;
+  color: #fff;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: 600;
+}
+.btn-black:hover {
+  background-color: #333;
+}
+.btn-white {
+  background-color: #fff;
+  color: #000;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: 600;
+}
+.btn-white:hover {
+  background-color: #f1f1f1;
+}
+
+/* Objetivos */
+#objetivos {
+  padding: 80px 0;
+  text-align: center;
+}
+#objetivos h2 {
+  margin-bottom: 30px;
+}
+i{
+  color: #009578;
+}
+.objetivo-item i {
+  font-size: 40px;
+  color: #009578;
+  margin-bottom: 15px;
+}
+.objetivo-item h5 {
+  font-weight: bold;
+}
+
+/* Detector */
+#detector {
+  padding: 80px 0;
+  text-align: center;
+}
+.upload-box {
+  border: 2px dashed #ccc;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.card-estilos{
+  background-color: #f8f4f4;
+}
+.bi-exclamation-triangle::before{
+  color: #ffff !important;
+}

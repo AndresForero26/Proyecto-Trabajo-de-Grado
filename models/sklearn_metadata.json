@@ -1,0 +1,12 @@
+{
+  "class_names": [
+    "Anthracnose",
+    "healthy_guava"
+  ],
+  "target_size": [
+    64,
+    64
+  ],
+  "accuracy": 0.8526011560693642,
+  "model_type": "RandomForest"
+}

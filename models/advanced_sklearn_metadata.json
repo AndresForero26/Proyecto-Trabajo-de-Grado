@@ -1,0 +1,60 @@
+{
+  "model_type": "Advanced Sklearn Ensemble",
+  "model_path": "C:\\Users\\isaur\\Desktop\\Proyecto\\proyecto-flask-guayabas\\models\\guayaba_advanced_sklearn_model.pkl",
+  "scaler_path": "C:\\Users\\isaur\\Desktop\\Proyecto\\proyecto-flask-guayabas\\models\\guayaba_advanced_scaler.pkl",
+  "extractor_path": "C:\\Users\\isaur\\Desktop\\Proyecto\\proyecto-flask-guayabas\\models\\guayaba_feature_extractor.pkl",
+  "training_date": "2025-09-15T16:09:30.051043",
+  "image_size": [
+    224,
+    224
+  ],
+  "classes": [
+    "Anthracnose",
+    "healthy_guava"
+  ],
+  "class_indices": {
+    "Anthracnose": 0,
+    "healthy_guava": 1
+  },
+  "results": {
+    "model_type": "Advanced Sklearn Ensemble",
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "confusion_matrix": "[[312   0]\n [  0 188]]",
+    "classification_report": {
+      "Anthracnose": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 312.0
+      },
+      "healthy_guava": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 188.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 500.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 500.0
+      }
+    },
+    "training_time": 3.7461886405944824,
+    "inference_time": 0.2093372344970703,
+    "samples_per_second": 2388.4905196213317,
+    "total_samples": 500,
+    "feature_count": 80
+  },
+  "feature_count": 80
+}

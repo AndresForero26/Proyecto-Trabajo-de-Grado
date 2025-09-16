@@ -1,0 +1,20 @@
+<div id="detector-resultado">
+{% if result %}
+<div class="text-center">
+    <h4>Resultado</h4>
+    {% if result.ruta and result.mensaje != 'No se detectó una guayaba clara en la imagen. Por favor, sube una imagen donde la guayaba sea visible.' and result.mensaje != 'La imagen está borrosa o tiene baja resolución, intenta subir una foto más clara para mejorar la detección.' and result.mensaje != 'Formato de archivo no permitido, sube una imagen en formato JPG o PNG.' and result.mensaje != 'El archivo no es una imagen válida.' %}
+    <img src="{{ result.ruta }}" class="img-fluid rounded mb-3" style="max-width:300px;">
+    {% endif %}
+    <p><strong>Diagnóstico:</strong> {{ result.mensaje }}</p>
+    {% if result.mensaje == 'La guayaba tiene Antracnosis.' or result.mensaje == 'La guayaba está sana. No se detectaron signos de Antracnosis.' %}
+    {% if result.pred_label == 'Anthracnose' or result.pred_label == 'Antracnosis' %}
+        <p><strong>Clase principal:</strong> Antracnosis</p>
+    {% elif result.pred_label == 'healthy_guava' or result.pred_label == 'Sana' %}
+        <p><strong>Clase principal:</strong> Sana</p>
+    {% endif %}
+    <p><strong>Confianza:</strong> {{ '%.2f'|format(result.confianza) }}</p>
+    <p>Probabilidades: Antracnosis={{ '%.2f'|format(result.prob_anthracnose) }}, Sana={{ '%.2f'|format(result.prob_healthy) }}</p>
+    {% endif %}
+</div>
+{% endif %}
+</div>
